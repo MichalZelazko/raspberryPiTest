@@ -1,4 +1,4 @@
-import time
+"""import time
 import RPi.GPIO as GPIO
 
 GPIO.setmode(GPIO.BCM)
@@ -17,4 +17,13 @@ try:
 			
 except KeyboardInterrupt:
 	GPIO.cleanup()
+		"""
 		
+from gpiozero import MotionSensor
+
+pir = motionsensor(18)
+
+while True:
+	pir.wait_for_motion()
+	print("you moved")
+	pir.wait_for_no_motion()
