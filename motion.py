@@ -21,7 +21,7 @@ except KeyboardInterrupt:
 		
 from gpiozero import MotionSensor
 
-pir = motionsensor(18)
+pir = MotionSensor(18)
 
 while True:
 	pir.wait_for_motion()
