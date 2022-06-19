@@ -8,3 +8,4 @@ for i in range(10):
 	time.sleep(1)
 	GPIO.output(23, False)
 	time.sleep(1)
+GPIO.cleanup()
