@@ -2,7 +2,8 @@ import time
 import RPi.GPIO as GPIO
 
 GPIO.setmode(GPIO.BCM)
-GPIO.setup(4, GPIO.OUT)
-GPIO.output(4, True)
-time.sleep(1)
-GPIO.output(4, False)
+GPIO.setup(23, GPIO.OUT)
+for i in range(10):
+	GPIO.output(23, True)
+	time.sleep(1)
+	GPIO.output(23, False)
