@@ -21,10 +21,10 @@ try:
 			left = time.perf_counter_ns()
 		if(right-left>0):
 			count = count - 1
-			print(time)
+			print(count)
 		else:
 			count = count + 1
-			print(time)
+			print(count)
 		while(GPIO.input(4) == GPIO.LOW):
 			GPIO.output(23, True)
 except KeyboardInterrupt:
